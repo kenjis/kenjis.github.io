@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/kenji/work/codeigniter/CodeIgniter4/system/Cache</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/Users/kenji/work/codeigniter/CodeIgniter4/system</a></li>
+        <li><a href="index.html">Cache</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Handlers/DummyHandler.php.html#41">DummyHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#41">MemcachedHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#42">PredisHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#42">RedisHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#41">WincacheHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#41">FileHandler</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="CacheFactory.php.html#46">CacheFactory</a></td><td class="text-right">60%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Handlers/FileHandler.php.html#41">FileHandler</a></td><td class="text-right">3127</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#42">RedisHandler</a></td><td class="text-right">1806</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#42">PredisHandler</a></td><td class="text-right">1332</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#41">MemcachedHandler</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#41">WincacheHandler</a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="CacheFactory.php.html#46">CacheFactory</a></td><td class="text-right">18</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#229"><abbr title="WincacheHandler::isSupported">isSupported</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#227"><abbr title="RedisHandler::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#115"><abbr title="PredisHandler::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#161"><abbr title="PredisHandler::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#199"><abbr title="PredisHandler::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#214"><abbr title="PredisHandler::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#229"><abbr title="PredisHandler::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#241"><abbr title="PredisHandler::clean">clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#256"><abbr title="PredisHandler::getCacheInfo">getCacheInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#270"><abbr title="PredisHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#292"><abbr title="PredisHandler::isSupported">isSupported</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#73"><abbr title="RedisHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#88"><abbr title="RedisHandler::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#123"><abbr title="RedisHandler::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#168"><abbr title="RedisHandler::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#210"><abbr title="RedisHandler::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#244"><abbr title="RedisHandler::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#74"><abbr title="PredisHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#102"><abbr title="WincacheHandler::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#201"><abbr title="WincacheHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#187"><abbr title="WincacheHandler::getCacheInfo">getCacheInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#172"><abbr title="WincacheHandler::clean">clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#155"><abbr title="WincacheHandler::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#135"><abbr title="WincacheHandler::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#118"><abbr title="WincacheHandler::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#76"><abbr title="WincacheHandler::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#258"><abbr title="RedisHandler::clean">clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#62"><abbr title="WincacheHandler::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#52"><abbr title="WincacheHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#323"><abbr title="RedisHandler::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#311"><abbr title="RedisHandler::isSupported">isSupported</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#287"><abbr title="RedisHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#273"><abbr title="RedisHandler::getCacheInfo">getCacheInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#89"><abbr title="PredisHandler::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#325"><abbr title="MemcachedHandler::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#46"><abbr title="DummyHandler::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#236"><abbr title="FileHandler::getCacheInfo">getCacheInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#60"><abbr title="DummyHandler::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#80"><abbr title="DummyHandler::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#94"><abbr title="DummyHandler::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#109"><abbr title="DummyHandler::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#124"><abbr title="DummyHandler::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#136"><abbr title="DummyHandler::clean">clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#151"><abbr title="DummyHandler::getCacheInfo">getCacheInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#165"><abbr title="DummyHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/DummyHandler.php.html#177"><abbr title="DummyHandler::isSupported">isSupported</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#112"><abbr title="FileHandler::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#141"><abbr title="FileHandler::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#160"><abbr title="FileHandler::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#192"><abbr title="FileHandler::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#221"><abbr title="FileHandler::clean">clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#250"><abbr title="FileHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#313"><abbr title="MemcachedHandler::isSupported">isSupported</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#179"><abbr title="MemcachedHandler::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#286"><abbr title="MemcachedHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#272"><abbr title="MemcachedHandler::getCacheInfo">getCacheInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#257"><abbr title="MemcachedHandler::clean">clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#243"><abbr title="MemcachedHandler::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#226"><abbr title="MemcachedHandler::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#209"><abbr title="MemcachedHandler::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#155"><abbr title="MemcachedHandler::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#87"><abbr title="MemcachedHandler::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#72"><abbr title="MemcachedHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#474"><abbr title="FileHandler::getFileInfo">getFileInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#423"><abbr title="FileHandler::getDirFileInfo">getDirFileInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#375"><abbr title="FileHandler::deleteFiles">deleteFiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#335"><abbr title="FileHandler::writeFile">writeFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#301"><abbr title="FileHandler::getItem">getItem</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="CacheFactory.php.html#57"><abbr title="CacheFactory::getHandler">getHandler</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#59"><abbr title="FileHandler::__construct">__construct</abbr></a></td><td class="text-right">83%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Handlers/PredisHandler.php.html#115"><abbr title="PredisHandler::get">get</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#123"><abbr title="RedisHandler::get">get</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#474"><abbr title="FileHandler::getFileInfo">getFileInfo</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#375"><abbr title="FileHandler::deleteFiles">deleteFiles</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#168"><abbr title="RedisHandler::save">save</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#87"><abbr title="MemcachedHandler::initialize">initialize</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#161"><abbr title="PredisHandler::save">save</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#423"><abbr title="FileHandler::getDirFileInfo">getDirFileInfo</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#88"><abbr title="RedisHandler::initialize">initialize</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#160"><abbr title="FileHandler::increment">increment</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#192"><abbr title="FileHandler::decrement">decrement</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#250"><abbr title="FileHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#335"><abbr title="FileHandler::writeFile">writeFile</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#179"><abbr title="MemcachedHandler::save">save</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CacheFactory.php.html#57"><abbr title="CacheFactory::getHandler">getHandler</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#74"><abbr title="PredisHandler::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#73"><abbr title="RedisHandler::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#270"><abbr title="PredisHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#325"><abbr title="MemcachedHandler::__destruct">__destruct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#72"><abbr title="MemcachedHandler::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#301"><abbr title="FileHandler::getItem">getItem</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#229"><abbr title="WincacheHandler::isSupported">isSupported</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#323"><abbr title="RedisHandler::__destruct">__destruct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#201"><abbr title="WincacheHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#155"><abbr title="WincacheHandler::decrement">decrement</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#135"><abbr title="WincacheHandler::increment">increment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#76"><abbr title="WincacheHandler::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/WincacheHandler.php.html#52"><abbr title="WincacheHandler::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#112"><abbr title="FileHandler::save">save</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/RedisHandler.php.html#287"><abbr title="RedisHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/PredisHandler.php.html#89"><abbr title="PredisHandler::initialize">initialize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#141"><abbr title="FileHandler::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#155"><abbr title="MemcachedHandler::get">get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#286"><abbr title="MemcachedHandler::getMetaData">getMetaData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/MemcachedHandler.php.html#313"><abbr title="MemcachedHandler::isSupported">isSupported</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Handlers/FileHandler.php.html#59"><abbr title="FileHandler::__construct">__construct</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.0.0</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.13</a> with <a href="https://xdebug.org/">Xdebug 2.5.0</a> and <a href="https://phpunit.de/">PHPUnit 6.0.5</a> at Tue Feb 7 17:34:39 CST 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([5,1,0,0,0,0,0,1,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([67,0,0,1,0,0,0,1,0,1,0,3], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[60,11,"<a href=\"CacheFactory.php.html#46\">CacheFactory<\/a>"],[0,10,"<a href=\"Handlers\/DummyHandler.php.html#41\">DummyHandler<\/a>"],[9.23076923077,64,"<a href=\"Handlers\/FileHandler.php.html#41\">FileHandler<\/a>"],[0,31,"<a href=\"Handlers\/MemcachedHandler.php.html#41\">MemcachedHandler<\/a>"],[0,36,"<a href=\"Handlers\/PredisHandler.php.html#42\">PredisHandler<\/a>"],[0,42,"<a href=\"Handlers\/RedisHandler.php.html#42\">RedisHandler<\/a>"],[0,17,"<a href=\"Handlers\/WincacheHandler.php.html#41\">WincacheHandler<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[60,11,"<a href=\"CacheFactory.php.html#57\">CacheFactory::getHandler<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#46\">DummyHandler::initialize<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#60\">DummyHandler::get<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#80\">DummyHandler::save<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#94\">DummyHandler::delete<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#109\">DummyHandler::increment<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#124\">DummyHandler::decrement<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#136\">DummyHandler::clean<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#151\">DummyHandler::getCacheInfo<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#165\">DummyHandler::getMetaData<\/a>"],[0,1,"<a href=\"Handlers\/DummyHandler.php.html#177\">DummyHandler::isSupported<\/a>"],[83.3333333333,3,"<a href=\"Handlers\/FileHandler.php.html#59\">FileHandler::__construct<\/a>"],[100,1,"<a href=\"Handlers\/FileHandler.php.html#74\">FileHandler::initialize<\/a>"],[100,2,"<a href=\"Handlers\/FileHandler.php.html#88\">FileHandler::get<\/a>"],[0,2,"<a href=\"Handlers\/FileHandler.php.html#112\">FileHandler::save<\/a>"],[0,2,"<a href=\"Handlers\/FileHandler.php.html#141\">FileHandler::delete<\/a>"],[0,4,"<a href=\"Handlers\/FileHandler.php.html#160\">FileHandler::increment<\/a>"],[0,4,"<a href=\"Handlers\/FileHandler.php.html#192\">FileHandler::decrement<\/a>"],[0,1,"<a href=\"Handlers\/FileHandler.php.html#221\">FileHandler::clean<\/a>"],[0,1,"<a href=\"Handlers\/FileHandler.php.html#236\">FileHandler::getCacheInfo<\/a>"],[0,4,"<a href=\"Handlers\/FileHandler.php.html#250\">FileHandler::getMetaData<\/a>"],[100,1,"<a href=\"Handlers\/FileHandler.php.html#286\">FileHandler::isSupported<\/a>"],[28.5714285714,4,"<a href=\"Handlers\/FileHandler.php.html#301\">FileHandler::getItem<\/a>"],[0,4,"<a href=\"Handlers\/FileHandler.php.html#335\">FileHandler::writeFile<\/a>"],[0,11,"<a href=\"Handlers\/FileHandler.php.html#375\">FileHandler::deleteFiles<\/a>"],[0,8,"<a href=\"Handlers\/FileHandler.php.html#423\">FileHandler::getDirFileInfo<\/a>"],[0,12,"<a href=\"Handlers\/FileHandler.php.html#474\">FileHandler::getFileInfo<\/a>"],[0,3,"<a href=\"Handlers\/MemcachedHandler.php.html#72\">MemcachedHandler::__construct<\/a>"],[0,10,"<a href=\"Handlers\/MemcachedHandler.php.html#87\">MemcachedHandler::initialize<\/a>"],[0,2,"<a href=\"Handlers\/MemcachedHandler.php.html#155\">MemcachedHandler::get<\/a>"],[0,4,"<a href=\"Handlers\/MemcachedHandler.php.html#179\">MemcachedHandler::save<\/a>"],[0,1,"<a href=\"Handlers\/MemcachedHandler.php.html#209\">MemcachedHandler::delete<\/a>"],[0,1,"<a href=\"Handlers\/MemcachedHandler.php.html#226\">MemcachedHandler::increment<\/a>"],[0,1,"<a href=\"Handlers\/MemcachedHandler.php.html#243\">MemcachedHandler::decrement<\/a>"],[0,1,"<a href=\"Handlers\/MemcachedHandler.php.html#257\">MemcachedHandler::clean<\/a>"],[0,1,"<a href=\"Handlers\/MemcachedHandler.php.html#272\">MemcachedHandler::getCacheInfo<\/a>"],[0,2,"<a href=\"Handlers\/MemcachedHandler.php.html#286\">MemcachedHandler::getMetaData<\/a>"],[0,2,"<a href=\"Handlers\/MemcachedHandler.php.html#313\">MemcachedHandler::isSupported<\/a>"],[0,3,"<a href=\"Handlers\/MemcachedHandler.php.html#325\">MemcachedHandler::__destruct<\/a>"],[0,3,"<a href=\"Handlers\/PredisHandler.php.html#74\">PredisHandler::__construct<\/a>"],[0,2,"<a href=\"Handlers\/PredisHandler.php.html#89\">PredisHandler::initialize<\/a>"],[0,12,"<a href=\"Handlers\/PredisHandler.php.html#115\">PredisHandler::get<\/a>"],[0,10,"<a href=\"Handlers\/PredisHandler.php.html#161\">PredisHandler::save<\/a>"],[0,1,"<a href=\"Handlers\/PredisHandler.php.html#199\">PredisHandler::delete<\/a>"],[0,1,"<a href=\"Handlers\/PredisHandler.php.html#214\">PredisHandler::increment<\/a>"],[0,1,"<a href=\"Handlers\/PredisHandler.php.html#229\">PredisHandler::decrement<\/a>"],[0,1,"<a href=\"Handlers\/PredisHandler.php.html#241\">PredisHandler::clean<\/a>"],[0,1,"<a href=\"Handlers\/PredisHandler.php.html#256\">PredisHandler::getCacheInfo<\/a>"],[0,3,"<a href=\"Handlers\/PredisHandler.php.html#270\">PredisHandler::getMetaData<\/a>"],[0,1,"<a href=\"Handlers\/PredisHandler.php.html#292\">PredisHandler::isSupported<\/a>"],[0,3,"<a href=\"Handlers\/RedisHandler.php.html#73\">RedisHandler::__construct<\/a>"],[0,6,"<a href=\"Handlers\/RedisHandler.php.html#88\">RedisHandler::initialize<\/a>"],[0,12,"<a href=\"Handlers\/RedisHandler.php.html#123\">RedisHandler::get<\/a>"],[0,11,"<a href=\"Handlers\/RedisHandler.php.html#168\">RedisHandler::save<\/a>"],[0,1,"<a href=\"Handlers\/RedisHandler.php.html#210\">RedisHandler::delete<\/a>"],[0,1,"<a href=\"Handlers\/RedisHandler.php.html#227\">RedisHandler::increment<\/a>"],[0,1,"<a href=\"Handlers\/RedisHandler.php.html#244\">RedisHandler::decrement<\/a>"],[0,1,"<a href=\"Handlers\/RedisHandler.php.html#258\">RedisHandler::clean<\/a>"],[0,1,"<a href=\"Handlers\/RedisHandler.php.html#273\">RedisHandler::getCacheInfo<\/a>"],[0,2,"<a href=\"Handlers\/RedisHandler.php.html#287\">RedisHandler::getMetaData<\/a>"],[0,1,"<a href=\"Handlers\/RedisHandler.php.html#311\">RedisHandler::isSupported<\/a>"],[0,2,"<a href=\"Handlers\/RedisHandler.php.html#323\">RedisHandler::__destruct<\/a>"],[0,2,"<a href=\"Handlers\/WincacheHandler.php.html#52\">WincacheHandler::__construct<\/a>"],[0,1,"<a href=\"Handlers\/WincacheHandler.php.html#62\">WincacheHandler::initialize<\/a>"],[0,2,"<a href=\"Handlers\/WincacheHandler.php.html#76\">WincacheHandler::get<\/a>"],[0,1,"<a href=\"Handlers\/WincacheHandler.php.html#102\">WincacheHandler::save<\/a>"],[0,1,"<a href=\"Handlers\/WincacheHandler.php.html#118\">WincacheHandler::delete<\/a>"],[0,2,"<a href=\"Handlers\/WincacheHandler.php.html#135\">WincacheHandler::increment<\/a>"],[0,2,"<a href=\"Handlers\/WincacheHandler.php.html#155\">WincacheHandler::decrement<\/a>"],[0,1,"<a href=\"Handlers\/WincacheHandler.php.html#172\">WincacheHandler::clean<\/a>"],[0,1,"<a href=\"Handlers\/WincacheHandler.php.html#187\">WincacheHandler::getCacheInfo<\/a>"],[0,2,"<a href=\"Handlers\/WincacheHandler.php.html#201\">WincacheHandler::getMetaData<\/a>"],[0,2,"<a href=\"Handlers\/WincacheHandler.php.html#229\">WincacheHandler::isSupported<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

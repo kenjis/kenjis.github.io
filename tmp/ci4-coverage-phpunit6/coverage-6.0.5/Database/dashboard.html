@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/kenji/work/codeigniter/CodeIgniter4/system/Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/Users/kenji/work/codeigniter/CodeIgniter4/system</a></li>
+        <li><a href="index.html">Database</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Postgre/Utils.php.html#42">Utils</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#44">BaseUtils</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#42">Forge</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#45">Builder</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#46">Connection</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#42">PreparedQuery</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#45">Result</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#42">BaseResult</a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#45">BaseConnection</a></td><td class="text-right">52%</td></tr>
+       <tr><td><a href="Config.php.html#45">Config</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="Database.php.html#46">Database</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#46">MigrationRunner</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Seeder.php.html#45">Seeder</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#41">BasePreparedQuery</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Migration.php.html#42">Migration</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Query.php.html#44">Query</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#50">BaseBuilder</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Postgre/Connection.php.html#46">Connection</a></td><td class="text-right">4556</td></tr>
+       <tr><td><a href="BaseConnection.php.html#45">BaseConnection</a></td><td class="text-right">3328</td></tr>
+       <tr><td><a href="BaseUtils.php.html#44">BaseUtils</a></td><td class="text-right">2550</td></tr>
+       <tr><td><a href="BaseResult.php.html#42">BaseResult</a></td><td class="text-right">1088</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#45">Builder</a></td><td class="text-right">870</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#42">Forge</a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#50">BaseBuilder</a></td><td class="text-right">452</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#46">MigrationRunner</a></td><td class="text-right">157</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#45">Result</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Config.php.html#45">Config</a></td><td class="text-right">61</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#42">PreparedQuery</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Query.php.html#44">Query</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#41">BasePreparedQuery</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Seeder.php.html#45">Seeder</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Database.php.html#46">Database</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Migration.php.html#42">Migration</a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Seeder.php.html#210"><abbr title="Seeder::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#481"><abbr title="MigrationRunner::removeHistory">removeHistory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#128"><abbr title="Connection::reconnect">reconnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#79"><abbr title="Connection::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#353"><abbr title="Builder::_like_statement">_like_statement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#330"><abbr title="Builder::_truncate">_truncate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#310"><abbr title="Builder::_delete">_delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#270"><abbr title="Builder::_updateBatch">_updateBatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#246"><abbr title="Builder::_update">_update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#225"><abbr title="Builder::_limit">_limit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#204"><abbr title="Builder::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#144"><abbr title="Builder::replace">replace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#117"><abbr title="Builder::decrement">decrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#98"><abbr title="Builder::increment">increment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#65"><abbr title="Builder::orderBy">orderBy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#395"><abbr title="MigrationRunner::getMigrationNumber">getMigrationNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#155"><abbr title="Connection::setDatabase">setDatabase</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#356"><abbr title="MigrationRunner::getHistory">getHistory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#269"><abbr title="MigrationRunner::current">current</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#176"><abbr title="Forge::_attributeAutoIncrement">_attributeAutoIncrement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#141"><abbr title="Forge::_attributeType">_attributeType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#79"><abbr title="Forge::_alterTable">_alterTable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Database.php.html#125"><abbr title="Database::loadUtils">loadUtils</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#170"><abbr title="Config::utils">utils</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#120"><abbr title="Config::getConnections">getConnections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#283"><abbr title="BaseUtils::getXMLFromResult">getXMLFromResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#249"><abbr title="BaseUtils::getCSVFromResult">getCSVFromResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#217"><abbr title="BaseUtils::repairTable">repairTable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#176"><abbr title="BaseUtils::optimizeDatabase">optimizeDatabase</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#148"><abbr title="BaseUtils::optimizeTable">optimizeTable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#141"><abbr title="Connection::_close">_close</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#167"><abbr title="Connection::getVersion">getVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#95"><abbr title="BaseUtils::listDatabases">listDatabases</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#74"><abbr title="PreparedQuery::_prepare">_prepare</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Query.php.html#221"><abbr title="Query::getStartTime">getStartTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Utils.php.html#67"><abbr title="Utils::_backup">_backup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#156"><abbr title="Result::fetchObject">fetchObject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#140"><abbr title="Result::fetchAssoc">fetchAssoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#126"><abbr title="Result::dataSeek">dataSeek</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#106"><abbr title="Result::freeResult">freeResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#82"><abbr title="Result::getFieldData">getFieldData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#64"><abbr title="Result::getFieldNames">getFieldNames</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#52"><abbr title="Result::getFieldCount">getFieldCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#142"><abbr title="PreparedQuery::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#137"><abbr title="PreparedQuery::parameterize">parameterize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#122"><abbr title="PreparedQuery::_getResult">_getResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#103"><abbr title="PreparedQuery::_execute">_execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#518"><abbr title="Connection::_transRollback">_transRollback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#192"><abbr title="Connection::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#506"><abbr title="Connection::_transCommit">_transCommit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#494"><abbr title="Connection::_transBegin">_transBegin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#482"><abbr title="Connection::setClientEncoding">setClientEncoding</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#429"><abbr title="Connection::buildDSN">buildDSN</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#382"><abbr title="Connection::insertID">insertID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#367"><abbr title="Connection::error">error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#329"><abbr title="Connection::_indexData">_indexData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#293"><abbr title="Connection::_fieldData">_fieldData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#277"><abbr title="Connection::_listColumns">_listColumns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#254"><abbr title="Connection::_listTables">_listTables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#240"><abbr title="Connection::_escapeString">_escapeString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#219"><abbr title="Connection::escape">escape</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#204"><abbr title="Connection::affectedRows">affectedRows</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#135"><abbr title="BaseUtils::databaseExists">databaseExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#323"><abbr title="BaseUtils::backup">backup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseUtils.php.html#83"><abbr title="BaseUtils::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#758"><abbr title="BaseConnection::transStatus">transStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#515"><abbr title="BaseConnection::getPlatform">getPlatform</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#226"><abbr title="BasePreparedQuery::hasError">hasError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#671"><abbr title="BaseConnection::transOff">transOff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#692"><abbr title="BaseConnection::transStrict">transStrict</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#707"><abbr title="BaseConnection::transStart">transStart</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#724"><abbr title="BaseConnection::transComplete">transComplete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1604"><abbr title="BaseConnection::getFieldData">getFieldData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#833"><abbr title="BaseConnection::transRollback">transRollback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1591"><abbr title="BaseConnection::fieldExists">fieldExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1531"><abbr title="BaseConnection::getFieldNames">getFieldNames</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#771"><abbr title="BaseConnection::transBegin">transBegin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1423"><abbr title="BaseConnection::callFunction">callFunction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1389"><abbr title="BaseConnection::escapeLikeString">escapeLikeString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#810"><abbr title="BaseConnection::transCommit">transCommit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1292"><abbr title="BaseConnection::setPrefix">setPrefix</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#504"><abbr title="BaseConnection::getError">getError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#492"><abbr title="BaseConnection::getDatabase">getDatabase</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#239"><abbr title="BasePreparedQuery::getErrorCode">getErrorCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#251"><abbr title="BasePreparedQuery::getErrorMessage">getErrorMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#506"><abbr title="BaseResult::getPreviousRow">getPreviousRow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#484"><abbr title="BaseResult::getNextRow">getNextRow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#468"><abbr title="BaseResult::getLastRow">getLastRow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#419"><abbr title="BaseResult::setRow">setRow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#338"><abbr title="BaseResult::getCustomRowObject">getCustomRowObject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2230"><abbr title="BaseBuilder::getCompiledDelete">getCompiledDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseResult.php.html#531"><abbr title="BaseResult::getUnbufferedRow">getUnbufferedRow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2729"><abbr title="BaseBuilder::resetQuery">resetQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#416"><abbr title="BaseConnection::close">close</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#441"><abbr title="BaseConnection::persistentConnect">persistentConnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2660"><abbr title="BaseBuilder::batchObjectToArray">batchObjectToArray</abbr></a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2629"><abbr title="BaseBuilder::objectToArray">objectToArray</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#502"><abbr title="MigrationRunner::ensureTable">ensureTable</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="BaseResult.php.html#296"><abbr title="BaseResult::getRow">getRow</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1351"><abbr title="BaseConnection::escapeString">escapeString</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Config.php.html#221"><abbr title="Config::ensureFactory">ensureFactory</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#556"><abbr title="BaseConnection::query">query</abbr></a></td><td class="text-right">51%</td></tr>
+       <tr><td><a href="Query.php.html#443"><abbr title="Query::matchSimpleBinds">matchSimpleBinds</abbr></a></td><td class="text-right">52%</td></tr>
+       <tr><td><a href="BaseResult.php.html#149"><abbr title="BaseResult::getCustomResultObject">getCustomResultObject</abbr></a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="BaseResult.php.html#206"><abbr title="BaseResult::getResultArray">getResultArray</abbr></a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#207"><abbr title="BaseBuilder::__construct">__construct</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1271"><abbr title="BaseConnection::prefixTable">prefixTable</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#244"><abbr title="MigrationRunner::latest">latest</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BaseResult.php.html#366"><abbr title="BaseResult::getRowArray">getRowArray</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1457"><abbr title="BaseConnection::listTables">listTables</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1426"><abbr title="BaseBuilder::countAllResults">countAllResults</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2360"><abbr title="BaseBuilder::trackAliases">trackAliases</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BaseResult.php.html#249"><abbr title="BaseResult::getResultObject">getResultObject</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#209"><abbr title="BasePreparedQuery::getQueryString">getQueryString</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1176"><abbr title="BaseBuilder::orderBy">orderBy</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1025"><abbr title="BaseConnection::protectIdentifiers">protectIdentifiers</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#426"><abbr title="MigrationRunner::getVersion">getVersion</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#281"><abbr title="MigrationRunner::findMigrations">findMigrations</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#113"><abbr title="MigrationRunner::__construct">__construct</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Seeder.php.html#126"><abbr title="Seeder::call">call</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1203"><abbr title="BaseConnection::escapeIdentifiers">escapeIdentifiers</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#192"><abbr title="BasePreparedQuery::close">close</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#886"><abbr title="BaseConnection::table">table</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2557"><abbr title="BaseBuilder::compileGroupBy">compileGroupBy</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1318"><abbr title="BaseConnection::escape">escape</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1736"><abbr title="BaseBuilder::validateInsert">validateInsert</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1957"><abbr title="BaseBuilder::validateUpdate">validateUpdate</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Config.php.html#133"><abbr title="Config::forge">forge</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Migration.php.html#69"><abbr title="Migration::__construct">__construct</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#157"><abbr title="MigrationRunner::version">version</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Config.php.html#74"><abbr title="Config::connect">connect</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Seeder.php.html#91"><abbr title="Seeder::__construct">__construct</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1854"><abbr title="BaseBuilder::getCompiledUpdate">getCompiledUpdate</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1602"><abbr title="BaseBuilder::setInsertBatch">setInsertBatch</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1986"><abbr title="BaseBuilder::updateBatch">updateBatch</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#100"><abbr title="BasePreparedQuery::prepare">prepare</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1362"><abbr title="BaseBuilder::get">get</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Database.php.html#99"><abbr title="Database::loadForge">loadForge</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1516"><abbr title="BaseBuilder::insertBatch">insertBatch</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2862"><abbr title="BaseBuilder::setBind">setBind</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Database.php.html#70"><abbr title="Database::load">load</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#763"><abbr title="BaseBuilder::_whereIn">_whereIn</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2594"><abbr title="BaseBuilder::compileOrderBy">compileOrderBy</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2698"><abbr title="BaseBuilder::isLiteral">isLiteral</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="BaseUtils.php.html#323"><abbr title="BaseUtils::backup">backup</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#429"><abbr title="Connection::buildDSN">buildDSN</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#79"><abbr title="Forge::_alterTable">_alterTable</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#79"><abbr title="Connection::connect">connect</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1531"><abbr title="BaseConnection::getFieldNames">getFieldNames</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#382"><abbr title="Connection::insertID">insertID</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1025"><abbr title="BaseConnection::protectIdentifiers">protectIdentifiers</abbr></a></td><td class="text-right">48</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#141"><abbr title="Forge::_attributeType">_attributeType</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="BaseUtils.php.html#95"><abbr title="BaseUtils::listDatabases">listDatabases</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#65"><abbr title="Builder::orderBy">orderBy</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="BaseResult.php.html#419"><abbr title="BaseResult::setRow">setRow</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#219"><abbr title="Connection::escape">escape</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="BaseConnection.php.html#556"><abbr title="BaseConnection::query">query</abbr></a></td><td class="text-right">32</td></tr>
+       <tr><td><a href="BaseConnection.php.html#833"><abbr title="BaseConnection::transRollback">transRollback</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseConnection.php.html#810"><abbr title="BaseConnection::transCommit">transCommit</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseConnection.php.html#771"><abbr title="BaseConnection::transBegin">transBegin</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseConnection.php.html#724"><abbr title="BaseConnection::transComplete">transComplete</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#144"><abbr title="Builder::replace">replace</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1423"><abbr title="BaseConnection::callFunction">callFunction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#270"><abbr title="Builder::_updateBatch">_updateBatch</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#167"><abbr title="Connection::getVersion">getVersion</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseResult.php.html#338"><abbr title="BaseResult::getCustomRowObject">getCustomRowObject</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseUtils.php.html#283"><abbr title="BaseUtils::getXMLFromResult">getXMLFromResult</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseUtils.php.html#176"><abbr title="BaseUtils::optimizeDatabase">optimizeDatabase</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="BaseResult.php.html#296"><abbr title="BaseResult::getRow">getRow</abbr></a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#157"><abbr title="MigrationRunner::version">version</abbr></a></td><td class="text-right">22</td></tr>
+       <tr><td><a href="BaseResult.php.html#149"><abbr title="BaseResult::getCustomResultObject">getCustomResultObject</abbr></a></td><td class="text-right">22</td></tr>
+       <tr><td><a href="BaseUtils.php.html#217"><abbr title="BaseUtils::repairTable">repairTable</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Config.php.html#170"><abbr title="Config::utils">utils</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Postgre/Forge.php.html#176"><abbr title="Forge::_attributeAutoIncrement">_attributeAutoIncrement</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="BaseUtils.php.html#249"><abbr title="BaseUtils::getCSVFromResult">getCSVFromResult</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="BaseUtils.php.html#148"><abbr title="BaseUtils::optimizeTable">optimizeTable</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#293"><abbr title="Connection::_fieldData">_fieldData</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2629"><abbr title="BaseBuilder::objectToArray">objectToArray</abbr></a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2660"><abbr title="BaseBuilder::batchObjectToArray">batchObjectToArray</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1203"><abbr title="BaseConnection::escapeIdentifiers">escapeIdentifiers</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1176"><abbr title="BaseBuilder::orderBy">orderBy</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="BaseResult.php.html#206"><abbr title="BaseResult::getResultArray">getResultArray</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#329"><abbr title="Connection::_indexData">_indexData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="BaseResult.php.html#531"><abbr title="BaseResult::getUnbufferedRow">getUnbufferedRow</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#204"><abbr title="Builder::delete">delete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="BaseResult.php.html#506"><abbr title="BaseResult::getPreviousRow">getPreviousRow</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#254"><abbr title="Connection::_listTables">_listTables</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Database.php.html#125"><abbr title="Database::loadUtils">loadUtils</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="BaseResult.php.html#484"><abbr title="BaseResult::getNextRow">getNextRow</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1986"><abbr title="BaseBuilder::updateBatch">updateBatch</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="Config.php.html#74"><abbr title="Config::connect">connect</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1457"><abbr title="BaseConnection::listTables">listTables</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="BaseResult.php.html#249"><abbr title="BaseResult::getResultObject">getResultObject</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Query.php.html#443"><abbr title="Query::matchSimpleBinds">matchSimpleBinds</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1516"><abbr title="BaseBuilder::insertBatch">insertBatch</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1426"><abbr title="BaseBuilder::countAllResults">countAllResults</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1318"><abbr title="BaseConnection::escape">escape</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1602"><abbr title="BaseBuilder::setInsertBatch">setInsertBatch</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#763"><abbr title="BaseBuilder::_whereIn">_whereIn</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#281"><abbr title="MigrationRunner::findMigrations">findMigrations</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Seeder.php.html#126"><abbr title="Seeder::call">call</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1351"><abbr title="BaseConnection::escapeString">escapeString</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2360"><abbr title="BaseBuilder::trackAliases">trackAliases</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2698"><abbr title="BaseBuilder::isLiteral">isLiteral</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2594"><abbr title="BaseBuilder::compileOrderBy">compileOrderBy</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2557"><abbr title="BaseBuilder::compileGroupBy">compileGroupBy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="BaseConnection.php.html#492"><abbr title="BaseConnection::getDatabase">getDatabase</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="BaseConnection.php.html#707"><abbr title="BaseConnection::transStart">transStart</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="BaseConnection.php.html#416"><abbr title="BaseConnection::close">close</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#353"><abbr title="Builder::_like_statement">_like_statement</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#481"><abbr title="MigrationRunner::removeHistory">removeHistory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Connection.php.html#128"><abbr title="Connection::reconnect">reconnect</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#395"><abbr title="MigrationRunner::getMigrationNumber">getMigrationNumber</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#356"><abbr title="MigrationRunner::getHistory">getHistory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#225"><abbr title="Builder::_limit">_limit</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Builder.php.html#246"><abbr title="Builder::_update">_update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#74"><abbr title="PreparedQuery::_prepare">_prepare</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/PreparedQuery.php.html#103"><abbr title="PreparedQuery::_execute">_execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#64"><abbr title="Result::getFieldNames">getFieldNames</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#82"><abbr title="Result::getFieldData">getFieldData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Postgre/Result.php.html#106"><abbr title="Result::freeResult">freeResult</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Query.php.html#221"><abbr title="Query::getStartTime">getStartTime</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="BaseResult.php.html#468"><abbr title="BaseResult::getLastRow">getLastRow</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#113"><abbr title="MigrationRunner::__construct">__construct</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Config.php.html#133"><abbr title="Config::forge">forge</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#207"><abbr title="BaseBuilder::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="BaseResult.php.html#366"><abbr title="BaseResult::getRowArray">getRowArray</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Seeder.php.html#91"><abbr title="Seeder::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#502"><abbr title="MigrationRunner::ensureTable">ensureTable</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#244"><abbr title="MigrationRunner::latest">latest</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="MigrationRunner.php.html#426"><abbr title="MigrationRunner::getVersion">getVersion</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1957"><abbr title="BaseBuilder::validateUpdate">validateUpdate</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1736"><abbr title="BaseBuilder::validateInsert">validateInsert</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1854"><abbr title="BaseBuilder::getCompiledUpdate">getCompiledUpdate</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#100"><abbr title="BasePreparedQuery::prepare">prepare</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Database.php.html#99"><abbr title="Database::loadForge">loadForge</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#1362"><abbr title="BaseBuilder::get">get</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Database.php.html#70"><abbr title="Database::load">load</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="BaseBuilder.php.html#2862"><abbr title="BaseBuilder::setBind">setBind</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Config.php.html#221"><abbr title="Config::ensureFactory">ensureFactory</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#209"><abbr title="BasePreparedQuery::getQueryString">getQueryString</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="BaseConnection.php.html#1271"><abbr title="BaseConnection::prefixTable">prefixTable</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="BasePreparedQuery.php.html#192"><abbr title="BasePreparedQuery::close">close</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="BaseConnection.php.html#886"><abbr title="BaseConnection::table">table</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Migration.php.html#69"><abbr title="Migration::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.0.0</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.13</a> with <a href="https://xdebug.org/">Xdebug 2.5.0</a> and <a href="https://phpunit.de/">PHPUnit 6.0.5</a> at Tue Feb 7 17:34:39 CST 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,0,1,3,1,2,3,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([95,0,1,2,1,1,5,9,9,21,10,126], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[88.1329113924,301,"<a href=\"BaseBuilder.php.html#50\">BaseBuilder<\/a>"],[52.1897810219,170,"<a href=\"BaseConnection.php.html#45\">BaseConnection<\/a>"],[78.5714285714,15,"<a href=\"BasePreparedQuery.php.html#41\">BasePreparedQuery<\/a>"],[44.5454545455,77,"<a href=\"BaseResult.php.html#42\">BaseResult<\/a>"],[0,50,"<a href=\"BaseUtils.php.html#44\">BaseUtils<\/a>"],[58.1395348837,23,"<a href=\"Config.php.html#45\">Config<\/a>"],[59.0909090909,9,"<a href=\"Database.php.html#46\">Database<\/a>"],[0,21,"<a href=\"Postgre\/Forge.php.html#42\">Forge<\/a>"],[83.3333333333,5,"<a href=\"Migration.php.html#42\">Migration<\/a>"],[66.1157024793,52,"<a href=\"MigrationRunner.php.html#46\">MigrationRunner<\/a>"],[0,29,"<a href=\"Postgre\/Builder.php.html#45\">Builder<\/a>"],[0,67,"<a href=\"Postgre\/Connection.php.html#46\">Connection<\/a>"],[0,7,"<a href=\"Postgre\/PreparedQuery.php.html#42\">PreparedQuery<\/a>"],[0,10,"<a href=\"Postgre\/Result.php.html#45\">Result<\/a>"],[0,1,"<a href=\"Postgre\/Utils.php.html#42\">Utils<\/a>"],[86.5853658537,39,"<a href=\"Query.php.html#44\">Query<\/a>"],[78.125,14,"<a href=\"Seeder.php.html#45\">Seeder<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[62.5,4,"<a href=\"BaseBuilder.php.html#207\">BaseBuilder::__construct<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#235\">BaseBuilder::getBinds<\/a>"],[100,5,"<a href=\"BaseBuilder.php.html#252\">BaseBuilder::select<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#288\">BaseBuilder::selectMax<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#305\">BaseBuilder::selectMin<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#322\">BaseBuilder::selectAvg<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#339\">BaseBuilder::selectSum<\/a>"],[90.9090909091,5,"<a href=\"BaseBuilder.php.html#360\">BaseBuilder::maxMinAvgSum<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#396\">BaseBuilder::createAliasFromTable<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#419\">BaseBuilder::distinct<\/a>"],[100,5,"<a href=\"BaseBuilder.php.html#438\">BaseBuilder::from<\/a>"],[90.9090909091,12,"<a href=\"BaseBuilder.php.html#487\">BaseBuilder::join<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#577\">BaseBuilder::where<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#596\">BaseBuilder::orWhere<\/a>"],[90.4761904762,11,"<a href=\"BaseBuilder.php.html#619\">BaseBuilder::whereHaving<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#683\">BaseBuilder::whereIn<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#702\">BaseBuilder::orWhereIn<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#721\">BaseBuilder::whereNotIn<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#740\">BaseBuilder::orWhereNotIn<\/a>"],[88.2352941176,8,"<a href=\"BaseBuilder.php.html#763\">BaseBuilder::_whereIn<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#819\">BaseBuilder::like<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#840\">BaseBuilder::notLike<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#861\">BaseBuilder::orLike<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#882\">BaseBuilder::orNotLike<\/a>"],[100,11,"<a href=\"BaseBuilder.php.html#907\">BaseBuilder::_like<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#973\">BaseBuilder::_like_statement<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#995\">BaseBuilder::groupStart<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1019\">BaseBuilder::orGroupStart<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1031\">BaseBuilder::notGroupStart<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1043\">BaseBuilder::orNotGroupStart<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1055\">BaseBuilder::groupEnd<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#1082\">BaseBuilder::groupGetType<\/a>"],[100,6,"<a href=\"BaseBuilder.php.html#1103\">BaseBuilder::groupBy<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1142\">BaseBuilder::having<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1160\">BaseBuilder::orHaving<\/a>"],[72.7272727273,11,"<a href=\"BaseBuilder.php.html#1176\">BaseBuilder::orderBy<\/a>"],[100,3,"<a href=\"BaseBuilder.php.html#1235\">BaseBuilder::limit<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#1259\">BaseBuilder::offset<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#1280\">BaseBuilder::_limit<\/a>"],[100,5,"<a href=\"BaseBuilder.php.html#1298\">BaseBuilder::set<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#1336\">BaseBuilder::getCompiledSelect<\/a>"],[85.7142857143,3,"<a href=\"BaseBuilder.php.html#1362\">BaseBuilder::get<\/a>"],[90.9090909091,3,"<a href=\"BaseBuilder.php.html#1389\">BaseBuilder::countAll<\/a>"],[66.6666666667,7,"<a href=\"BaseBuilder.php.html#1426\">BaseBuilder::countAllResults<\/a>"],[100,3,"<a href=\"BaseBuilder.php.html#1482\">BaseBuilder::getWhere<\/a>"],[86.3636363636,9,"<a href=\"BaseBuilder.php.html#1516\">BaseBuilder::insertBatch<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1586\">BaseBuilder::_insertBatch<\/a>"],[85,8,"<a href=\"BaseBuilder.php.html#1602\">BaseBuilder::setInsertBatch<\/a>"],[90,3,"<a href=\"BaseBuilder.php.html#1659\">BaseBuilder::getCompiledInsert<\/a>"],[92.3076923077,4,"<a href=\"BaseBuilder.php.html#1695\">BaseBuilder::insert<\/a>"],[80,3,"<a href=\"BaseBuilder.php.html#1736\">BaseBuilder::validateInsert<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1764\">BaseBuilder::_insert<\/a>"],[90.9090909091,5,"<a href=\"BaseBuilder.php.html#1782\">BaseBuilder::replace<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1821\">BaseBuilder::_replace<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#1838\">BaseBuilder::_fromTables<\/a>"],[83.3333333333,3,"<a href=\"BaseBuilder.php.html#1854\">BaseBuilder::getCompiledUpdate<\/a>"],[92.8571428571,7,"<a href=\"BaseBuilder.php.html#1885\">BaseBuilder::update<\/a>"],[100,3,"<a href=\"BaseBuilder.php.html#1932\">BaseBuilder::_update<\/a>"],[80,3,"<a href=\"BaseBuilder.php.html#1957\">BaseBuilder::validateUpdate<\/a>"],[85.7142857143,11,"<a href=\"BaseBuilder.php.html#1986\">BaseBuilder::updateBatch<\/a>"],[100,5,"<a href=\"BaseBuilder.php.html#2066\">BaseBuilder::_updateBatch<\/a>"],[93.3333333333,7,"<a href=\"BaseBuilder.php.html#2106\">BaseBuilder::setUpdateBatch<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#2154\">BaseBuilder::emptyTable<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#2183\">BaseBuilder::truncate<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#2213\">BaseBuilder::_truncate<\/a>"],[0,1,"<a href=\"BaseBuilder.php.html#2230\">BaseBuilder::getCompiledDelete<\/a>"],[93.3333333333,8,"<a href=\"BaseBuilder.php.html#2255\">BaseBuilder::delete<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#2304\">BaseBuilder::increment<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#2323\">BaseBuilder::decrement<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#2343\">BaseBuilder::_delete<\/a>"],[66.6666666667,6,"<a href=\"BaseBuilder.php.html#2360\">BaseBuilder::trackAliases<\/a>"],[100,9,"<a href=\"BaseBuilder.php.html#2408\">BaseBuilder::compileSelect<\/a>"],[100,10,"<a href=\"BaseBuilder.php.html#2479\">BaseBuilder::compileWhereHaving<\/a>"],[80,6,"<a href=\"BaseBuilder.php.html#2557\">BaseBuilder::compileGroupBy<\/a>"],[88.8888888889,7,"<a href=\"BaseBuilder.php.html#2594\">BaseBuilder::compileOrderBy<\/a>"],[28.5714285714,6,"<a href=\"BaseBuilder.php.html#2629\">BaseBuilder::objectToArray<\/a>"],[18.1818181818,5,"<a href=\"BaseBuilder.php.html#2660\">BaseBuilder::batchObjectToArray<\/a>"],[88.8888888889,7,"<a href=\"BaseBuilder.php.html#2698\">BaseBuilder::isLiteral<\/a>"],[0,1,"<a href=\"BaseBuilder.php.html#2729\">BaseBuilder::resetQuery<\/a>"],[100,2,"<a href=\"BaseBuilder.php.html#2746\">BaseBuilder::resetRun<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#2761\">BaseBuilder::resetSelect<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#2787\">BaseBuilder::resetWrite<\/a>"],[100,1,"<a href=\"BaseBuilder.php.html#2808\">BaseBuilder::hasOperator<\/a>"],[100,4,"<a href=\"BaseBuilder.php.html#2823\">BaseBuilder::getOperator<\/a>"],[87.5,3,"<a href=\"BaseBuilder.php.html#2862\">BaseBuilder::setBind<\/a>"],[100,2,"<a href=\"BaseConnection.php.html#328\">BaseConnection::__construct<\/a>"],[100,9,"<a href=\"BaseConnection.php.html#345\">BaseConnection::initialize<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#409\">BaseConnection::connect<\/a>"],[0,2,"<a href=\"BaseConnection.php.html#416\">BaseConnection::close<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#432\">BaseConnection::_close<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#441\">BaseConnection::persistentConnect<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#454\">BaseConnection::reconnect<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#468\">BaseConnection::getConnection<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#483\">BaseConnection::setDatabase<\/a>"],[0,2,"<a href=\"BaseConnection.php.html#492\">BaseConnection::getDatabase<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#504\">BaseConnection::getError<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#515\">BaseConnection::getPlatform<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#527\">BaseConnection::getVersion<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#538\">BaseConnection::execute<\/a>"],[51.724137931,13,"<a href=\"BaseConnection.php.html#556\">BaseConnection::query<\/a>"],[100,2,"<a href=\"BaseConnection.php.html#654\">BaseConnection::simpleQuery<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#671\">BaseConnection::transOff<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#692\">BaseConnection::transStrict<\/a>"],[0,2,"<a href=\"BaseConnection.php.html#707\">BaseConnection::transStart<\/a>"],[0,5,"<a href=\"BaseConnection.php.html#724\">BaseConnection::transComplete<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#758\">BaseConnection::transStatus<\/a>"],[0,5,"<a href=\"BaseConnection.php.html#771\">BaseConnection::transBegin<\/a>"],[0,5,"<a href=\"BaseConnection.php.html#810\">BaseConnection::transCommit<\/a>"],[0,5,"<a href=\"BaseConnection.php.html#833\">BaseConnection::transRollback<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#856\">BaseConnection::_transBegin<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#865\">BaseConnection::_transCommit<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#874\">BaseConnection::_transRollback<\/a>"],[75,2,"<a href=\"BaseConnection.php.html#886\">BaseConnection::table<\/a>"],[100,2,"<a href=\"BaseConnection.php.html#919\">BaseConnection::prepare<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#945\">BaseConnection::getLastQuery<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#957\">BaseConnection::showLastQuery<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#974\">BaseConnection::getConnectStart<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#991\">BaseConnection::getConnectDuration<\/a>"],[72.7272727273,30,"<a href=\"BaseConnection.php.html#1025\">BaseConnection::protectIdentifiers<\/a>"],[75,15,"<a href=\"BaseConnection.php.html#1203\">BaseConnection::escapeIdentifiers<\/a>"],[66.6666666667,2,"<a href=\"BaseConnection.php.html#1271\">BaseConnection::prefixTable<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#1292\">BaseConnection::setPrefix<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1304\">BaseConnection::affectedRows<\/a>"],[80,8,"<a href=\"BaseConnection.php.html#1318\">BaseConnection::escape<\/a>"],[40,4,"<a href=\"BaseConnection.php.html#1351\">BaseConnection::escapeString<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#1389\">BaseConnection::escapeLikeString<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1406\">BaseConnection::_escapeString<\/a>"],[0,5,"<a href=\"BaseConnection.php.html#1423\">BaseConnection::callFunction<\/a>"],[66.6666666667,8,"<a href=\"BaseConnection.php.html#1457\">BaseConnection::listTables<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1516\">BaseConnection::tableExists<\/a>"],[0,9,"<a href=\"BaseConnection.php.html#1531\">BaseConnection::getFieldNames<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#1591\">BaseConnection::fieldExists<\/a>"],[0,1,"<a href=\"BaseConnection.php.html#1604\">BaseConnection::getFieldData<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1619\">BaseConnection::getIndexData<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1638\">BaseConnection::pretend<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1656\">BaseConnection::error<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1665\">BaseConnection::insertID<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1676\">BaseConnection::_listTables<\/a>"],[100,1,"<a href=\"BaseConnection.php.html#1687\">BaseConnection::_listColumns<\/a>"],[100,1,"<a href=\"BasePreparedQuery.php.html#81\">BasePreparedQuery::__construct<\/a>"],[85.7142857143,3,"<a href=\"BasePreparedQuery.php.html#100\">BasePreparedQuery::prepare<\/a>"],[100,1,"<a href=\"BasePreparedQuery.php.html#131\">BasePreparedQuery::_prepare<\/a>"],[100,1,"<a href=\"BasePreparedQuery.php.html#143\">BasePreparedQuery::execute<\/a>"],[100,1,"<a href=\"BasePreparedQuery.php.html#176\">BasePreparedQuery::_execute<\/a>"],[100,1,"<a href=\"BasePreparedQuery.php.html#185\">BasePreparedQuery::_getResult<\/a>"],[75,2,"<a href=\"BasePreparedQuery.php.html#192\">BasePreparedQuery::close<\/a>"],[66.6666666667,2,"<a href=\"BasePreparedQuery.php.html#209\">BasePreparedQuery::getQueryString<\/a>"],[0,1,"<a href=\"BasePreparedQuery.php.html#226\">BasePreparedQuery::hasError<\/a>"],[0,1,"<a href=\"BasePreparedQuery.php.html#239\">BasePreparedQuery::getErrorCode<\/a>"],[0,1,"<a href=\"BasePreparedQuery.php.html#251\">BasePreparedQuery::getErrorMessage<\/a>"],[100,1,"<a href=\"BaseResult.php.html#109\">BaseResult::__construct<\/a>"],[100,3,"<a href=\"BaseResult.php.html#126\">BaseResult::getResult<\/a>"],[55,11,"<a href=\"BaseResult.php.html#149\">BaseResult::getCustomResultObject<\/a>"],[58.3333333333,8,"<a href=\"BaseResult.php.html#206\">BaseResult::getResultArray<\/a>"],[66.6666666667,8,"<a href=\"BaseResult.php.html#249\">BaseResult::getResultObject<\/a>"],[30,7,"<a href=\"BaseResult.php.html#296\">BaseResult::getRow<\/a>"],[0,5,"<a href=\"BaseResult.php.html#338\">BaseResult::getCustomRowObject<\/a>"],[66.6666666667,4,"<a href=\"BaseResult.php.html#366\">BaseResult::getRowArray<\/a>"],[100,4,"<a href=\"BaseResult.php.html#393\">BaseResult::getRowObject<\/a>"],[0,6,"<a href=\"BaseResult.php.html#419\">BaseResult::setRow<\/a>"],[100,2,"<a href=\"BaseResult.php.html#452\">BaseResult::getFirstRow<\/a>"],[0,2,"<a href=\"BaseResult.php.html#468\">BaseResult::getLastRow<\/a>"],[0,3,"<a href=\"BaseResult.php.html#484\">BaseResult::getNextRow<\/a>"],[0,3,"<a href=\"BaseResult.php.html#506\">BaseResult::getPreviousRow<\/a>"],[0,3,"<a href=\"BaseResult.php.html#531\">BaseResult::getUnbufferedRow<\/a>"],[100,1,"<a href=\"BaseResult.php.html#552\">BaseResult::getFieldCount<\/a>"],[100,1,"<a href=\"BaseResult.php.html#561\">BaseResult::getFieldNames<\/a>"],[100,1,"<a href=\"BaseResult.php.html#570\">BaseResult::getFieldData<\/a>"],[100,1,"<a href=\"BaseResult.php.html#579\">BaseResult::freeResult<\/a>"],[100,1,"<a href=\"BaseResult.php.html#592\">BaseResult::dataSeek<\/a>"],[100,1,"<a href=\"BaseResult.php.html#603\">BaseResult::fetchAssoc<\/a>"],[100,1,"<a href=\"BaseResult.php.html#616\">BaseResult::fetchObject<\/a>"],[0,1,"<a href=\"BaseUtils.php.html#83\">BaseUtils::__construct<\/a>"],[0,6,"<a href=\"BaseUtils.php.html#95\">BaseUtils::listDatabases<\/a>"],[0,1,"<a href=\"BaseUtils.php.html#135\">BaseUtils::databaseExists<\/a>"],[0,4,"<a href=\"BaseUtils.php.html#148\">BaseUtils::optimizeTable<\/a>"],[0,5,"<a href=\"BaseUtils.php.html#176\">BaseUtils::optimizeDatabase<\/a>"],[0,4,"<a href=\"BaseUtils.php.html#217\">BaseUtils::repairTable<\/a>"],[0,4,"<a href=\"BaseUtils.php.html#249\">BaseUtils::getCSVFromResult<\/a>"],[0,5,"<a href=\"BaseUtils.php.html#283\">BaseUtils::getXMLFromResult<\/a>"],[0,19,"<a href=\"BaseUtils.php.html#323\">BaseUtils::backup<\/a>"],[100,1,"<a href=\"BaseUtils.php.html#434\">BaseUtils::_backup<\/a>"],[81.25,10,"<a href=\"Config.php.html#74\">Config::connect<\/a>"],[0,1,"<a href=\"Config.php.html#120\">Config::getConnections<\/a>"],[80,5,"<a href=\"Config.php.html#133\">Config::forge<\/a>"],[0,4,"<a href=\"Config.php.html#170\">Config::utils<\/a>"],[100,1,"<a href=\"Config.php.html#207\">Config::seeder<\/a>"],[50,2,"<a href=\"Config.php.html#221\">Config::ensureFactory<\/a>"],[87.5,3,"<a href=\"Database.php.html#70\">Database::load<\/a>"],[85.7142857143,3,"<a href=\"Database.php.html#99\">Database::loadForge<\/a>"],[0,3,"<a href=\"Database.php.html#125\">Database::loadUtils<\/a>"],[0,11,"<a href=\"Postgre\/Forge.php.html#79\">Forge::_alterTable<\/a>"],[0,6,"<a href=\"Postgre\/Forge.php.html#141\">Forge::_attributeType<\/a>"],[0,4,"<a href=\"Postgre\/Forge.php.html#176\">Forge::_attributeAutoIncrement<\/a>"],[80,2,"<a href=\"Migration.php.html#69\">Migration::__construct<\/a>"],[100,1,"<a href=\"Migration.php.html#85\">Migration::getDBGroup<\/a>"],[100,1,"<a href=\"Migration.php.html#95\">Migration::up<\/a>"],[100,1,"<a href=\"Migration.php.html#102\">Migration::down<\/a>"],[75,5,"<a href=\"MigrationRunner.php.html#113\">MigrationRunner::__construct<\/a>"],[80.6451612903,20,"<a href=\"MigrationRunner.php.html#157\">MigrationRunner::version<\/a>"],[66.6666666667,3,"<a href=\"MigrationRunner.php.html#244\">MigrationRunner::latest<\/a>"],[0,1,"<a href=\"MigrationRunner.php.html#269\">MigrationRunner::current<\/a>"],[75,7,"<a href=\"MigrationRunner.php.html#281\">MigrationRunner::findMigrations<\/a>"],[100,1,"<a href=\"MigrationRunner.php.html#341\">MigrationRunner::setPath<\/a>"],[0,2,"<a href=\"MigrationRunner.php.html#356\">MigrationRunner::getHistory<\/a>"],[100,1,"<a href=\"MigrationRunner.php.html#377\">MigrationRunner::setSilent<\/a>"],[0,2,"<a href=\"MigrationRunner.php.html#395\">MigrationRunner::getMigrationNumber<\/a>"],[100,1,"<a href=\"MigrationRunner.php.html#410\">MigrationRunner::getMigrationName<\/a>"],[72.7272727273,3,"<a href=\"MigrationRunner.php.html#426\">MigrationRunner::getVersion<\/a>"],[100,2,"<a href=\"MigrationRunner.php.html#456\">MigrationRunner::addHistory<\/a>"],[0,2,"<a href=\"MigrationRunner.php.html#481\">MigrationRunner::removeHistory<\/a>"],[28.5714285714,2,"<a href=\"MigrationRunner.php.html#502\">MigrationRunner::ensureTable<\/a>"],[0,6,"<a href=\"Postgre\/Builder.php.html#65\">Builder::orderBy<\/a>"],[0,1,"<a href=\"Postgre\/Builder.php.html#98\">Builder::increment<\/a>"],[0,1,"<a href=\"Postgre\/Builder.php.html#117\">Builder::decrement<\/a>"],[0,5,"<a href=\"Postgre\/Builder.php.html#144\">Builder::replace<\/a>"],[0,3,"<a href=\"Postgre\/Builder.php.html#204\">Builder::delete<\/a>"],[0,2,"<a href=\"Postgre\/Builder.php.html#225\">Builder::_limit<\/a>"],[0,2,"<a href=\"Postgre\/Builder.php.html#246\">Builder::_update<\/a>"],[0,5,"<a href=\"Postgre\/Builder.php.html#270\">Builder::_updateBatch<\/a>"],[0,1,"<a href=\"Postgre\/Builder.php.html#310\">Builder::_delete<\/a>"],[0,1,"<a href=\"Postgre\/Builder.php.html#330\">Builder::_truncate<\/a>"],[0,2,"<a href=\"Postgre\/Builder.php.html#353\">Builder::_like_statement<\/a>"],[0,10,"<a href=\"Postgre\/Connection.php.html#79\">Connection::connect<\/a>"],[0,2,"<a href=\"Postgre\/Connection.php.html#128\">Connection::reconnect<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#141\">Connection::_close<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#155\">Connection::setDatabase<\/a>"],[0,5,"<a href=\"Postgre\/Connection.php.html#167\">Connection::getVersion<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#192\">Connection::execute<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#204\">Connection::affectedRows<\/a>"],[0,6,"<a href=\"Postgre\/Connection.php.html#219\">Connection::escape<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#240\">Connection::_escapeString<\/a>"],[0,3,"<a href=\"Postgre\/Connection.php.html#254\">Connection::_listTables<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#277\">Connection::_listColumns<\/a>"],[0,4,"<a href=\"Postgre\/Connection.php.html#293\">Connection::_fieldData<\/a>"],[0,3,"<a href=\"Postgre\/Connection.php.html#329\">Connection::_indexData<\/a>"],[100,1,"<a href=\"Postgre\/Connection.php.html#348\">Connection::anonymous function<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#367\">Connection::error<\/a>"],[0,9,"<a href=\"Postgre\/Connection.php.html#382\">Connection::insertID<\/a>"],[0,13,"<a href=\"Postgre\/Connection.php.html#429\">Connection::buildDSN<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#482\">Connection::setClientEncoding<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#494\">Connection::_transBegin<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#506\">Connection::_transCommit<\/a>"],[0,1,"<a href=\"Postgre\/Connection.php.html#518\">Connection::_transRollback<\/a>"],[0,2,"<a href=\"Postgre\/PreparedQuery.php.html#74\">PreparedQuery::_prepare<\/a>"],[0,2,"<a href=\"Postgre\/PreparedQuery.php.html#103\">PreparedQuery::_execute<\/a>"],[0,1,"<a href=\"Postgre\/PreparedQuery.php.html#122\">PreparedQuery::_getResult<\/a>"],[0,1,"<a href=\"Postgre\/PreparedQuery.php.html#137\">PreparedQuery::parameterize<\/a>"],[0,1,"<a href=\"Postgre\/PreparedQuery.php.html#142\">PreparedQuery::anonymous function<\/a>"],[0,1,"<a href=\"Postgre\/Result.php.html#52\">Result::getFieldCount<\/a>"],[0,2,"<a href=\"Postgre\/Result.php.html#64\">Result::getFieldNames<\/a>"],[0,2,"<a href=\"Postgre\/Result.php.html#82\">Result::getFieldData<\/a>"],[0,2,"<a href=\"Postgre\/Result.php.html#106\">Result::freeResult<\/a>"],[0,1,"<a href=\"Postgre\/Result.php.html#126\">Result::dataSeek<\/a>"],[0,1,"<a href=\"Postgre\/Result.php.html#140\">Result::fetchAssoc<\/a>"],[0,1,"<a href=\"Postgre\/Result.php.html#156\">Result::fetchObject<\/a>"],[0,1,"<a href=\"Postgre\/Utils.php.html#67\">Utils::_backup<\/a>"],[100,1,"<a href=\"Query.php.html#121\">Query::__construct<\/a>"],[100,2,"<a href=\"Query.php.html#137\">Query::setQuery<\/a>"],[100,1,"<a href=\"Query.php.html#158\">Query::setBinds<\/a>"],[100,2,"<a href=\"Query.php.html#173\">Query::getQuery<\/a>"],[100,2,"<a href=\"Query.php.html#197\">Query::setDuration<\/a>"],[0,2,"<a href=\"Query.php.html#221\">Query::getStartTime<\/a>"],[100,1,"<a href=\"Query.php.html#240\">Query::getDuration<\/a>"],[100,1,"<a href=\"Query.php.html#253\">Query::setError<\/a>"],[100,1,"<a href=\"Query.php.html#268\">Query::hasError<\/a>"],[100,1,"<a href=\"Query.php.html#280\">Query::getErrorCode<\/a>"],[100,1,"<a href=\"Query.php.html#292\">Query::getErrorMessage<\/a>"],[100,1,"<a href=\"Query.php.html#304\">Query::isWriteType<\/a>"],[100,2,"<a href=\"Query.php.html#321\">Query::swapPrefix<\/a>"],[100,1,"<a href=\"Query.php.html#337\">Query::getOriginalQuery<\/a>"],[100,8,"<a href=\"Query.php.html#347\">Query::compileBinds<\/a>"],[100,5,"<a href=\"Query.php.html#402\">Query::matchNamedBinds<\/a>"],[52.9411764706,6,"<a href=\"Query.php.html#443\">Query::matchSimpleBinds<\/a>"],[100,1,"<a href=\"Query.php.html#489\">Query::__toString<\/a>"],[81.8181818182,4,"<a href=\"Seeder.php.html#91\">Seeder::__construct<\/a>"],[75,7,"<a href=\"Seeder.php.html#126\">Seeder::call<\/a>"],[100,1,"<a href=\"Seeder.php.html#177\">Seeder::setPath<\/a>"],[100,1,"<a href=\"Seeder.php.html#193\">Seeder::setSilent<\/a>"],[0,1,"<a href=\"Seeder.php.html#210\">Seeder::run<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
